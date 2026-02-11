@@ -7,8 +7,8 @@
 #define OLED_RESET 0x3c
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT);
 void setup() {
-// write your initialization code here
-
+    Serial.begin(9600);
+    if (!display.begin(SSD1306_SWITCH))
 
 }
 
